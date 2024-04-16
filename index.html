@@ -19,34 +19,56 @@
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
+
+	<!--Schema.org-->
 	<script type="application/ld+json">
-	{
-		"@context": "http://schema.org",
-		"@type": "Person",
-		"name": "Nina Carducci",
-		"jobTitle": "Photographer",
-		"url": "https://ninacarducci.github.io/",
-		"address": {
+		{
+		  "@context": "http://schema.org",
+		  "@type": "ProfessionalService",
+		  "name": "Nina Carducci",
+		  "jobTitle": "Photographer",
+		  "image": "./assets/images/nina.png",
+		  "url": "https://ninacarducci.github.io/",
+		  "address": {
 			"@type": "PostalAddress",
 			"streetAddress": "68 avenue Alsace-Lorraine",
 			"addressLocality": "Bordeaux",
 			"postalCode": "33200",
-			"addressCountry": "France"
-		},
-		"telephone": "05 56 67 78 89",
-		"availability": {
-			"@type": "Availability",
-			"dayOfWeek": ["https://schema.org/Monday", "https://schema.org/Friday"],
-			"startTime": "10:00",
-			"endTime": "19:00"
+			"addressRegion": "Gironde",
+			"addressCountry": "FR"
+		  },
+		  "telephone": "05 56 67 78 89",
+		  "openingHoursSpecification": [
+			{
+			  "@type": "OpeningHoursSpecification",
+			  "dayOfWeek": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday"
+			  ],
+			  "startTime": "10:00",
+			  "endTime": "19:00"
+			}
+		  ],
+		  "sameAs": ["https://www.instagram.com/ninacarducci.photo"]
 		}
-	}	
 	</script>
+	<!--Balises meta facebook-->
 	<meta property="og:title" content="Nina Carducci - Photographe professionnelle" />
 	<meta property="og:url" content="https://ninacarducci.github.io/" />
 	<meta property="og:description" content="Portfolio de Nina Carducci" />
 	<meta property="og:site_name" content="Nina  Carducci" />
 	<meta property="og:type" content="website" />
+
+	<!--Balises meta twitter-->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle">
+	<meta name="twitter:description" content="Portfolio de Nina Carducci">
+	<meta name="twitter:image" content="https://exemple.com/image.jpg">
+	<meta name="twitter:site" content="@NomUtilisateurTwitter">
+	<meta name="twitter:url" content="https://ninacarducci.github.io/">
 </head>
 
 <body>
